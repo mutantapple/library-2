@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\library-be",
+    "\\library-be\\bin",
+    "\\library-be\\routes",
+    "\\library-be\\views",
+    "\\library-fe",
+    "\\library-fe\\src",
+    "\\library-fe\\src\\app"
+  ],
+  "SelectedNode": "\\library-be\\routes\\media.js",
+  "PreviewInSolutionExplorer": false
+}
