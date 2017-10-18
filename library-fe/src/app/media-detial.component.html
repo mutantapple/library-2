@@ -1,0 +1,41 @@
+<div *ngIf="selectedMedia">
+  <h2>{{selectedMedia?.title}} details!</h2>
+  <div class="row">
+    <div class="col-auto">
+      Title:<i>{{selectedMedia?.title}}</i>
+    </div>
+    <div class="col-auto">
+      Director:<i>{{selectedMedia?.director}}</i>
+    </div>
+    <div class="col-auto">
+      <p>Type: {{selectedMedia?.media_type}}</p>
+    </div>
+    <div class="col-auto">
+      <p>ID: {{selectedMedia?.id}}</p>
+    </div>
+    <div class="col-auto">
+      <p>Checked in: {{selectedMedia?.checkedin ? 'yes' : 'no'}}</p>
+    </div>
+  </div>
+  <div>
+    <div class="row">
+      <div class="col-1">
+        <label>Title: </label>
+      </div>
+      <div class="col-auto">
+        <input [(ngModel)]="selectedMedia.title" placeholder="title" /><br />
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-1">
+        <label>Director:</label>
+      </div>
+      <div class="col-auto">
+        <input [(ngModel)]="selectedMedia.director" placeholder="director" />
+      </div>
+    </div>
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">save</button>
+  <button (click)="checkout()">Check Out</button>
+</div>

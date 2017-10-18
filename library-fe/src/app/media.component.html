@@ -1,0 +1,8 @@
+<div class="row media">
+  <div class="col" *ngFor="let m of media">
+    <div [class.selected]="m === selectedMedia"
+         (click)="gotoDetail(m)">
+      <p>Title:{{m.title}}<br />Director:{{m.director}}</p>
+    </div>
+  </div>
+</div>
